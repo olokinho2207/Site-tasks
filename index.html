@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Tasks</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="item"><span class="material-icons md-24">donut_large</span></div>
+        <div class="item"><span class="material-icons md-24">smart_display</span></div>
+        <div class="item"><span class="material-icons md-24">add_circle</span></div>
+    </div>
+    <div class="container_list">
+        <div class="head">
+            <h2>Project</h2>
+            <div class="icons">
+                <span class="material-icons">notifications</span>
+                <span class="material-icons">settings</span>
+            </div>
+        </div>
+
+        <div class="list_wrapper">
+            <h3 class="list_title">Overview</h3>
+            <ul class="list">
+                <li class="item">
+                    <span class="material-icons md-24">view_agenda</span>
+                    <span>On the Agenda</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">calendar_today</span>
+                    <span>Today</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">search</span>
+                    <span>Search</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="list_wrapper">
+            <h3 class="list_title">Project</h3>
+            <ul class="list">
+                <li class="item">
+                    <span class="material-icons md-24">explore</span>
+                    <span>Discovery</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">ads_click</span>
+                    <span>Key Objectives</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">contact_support</span>
+                    <span>Problems</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">equalizer</span>
+                    <span>Competitor analysis</span>
+                </li>
+            </ul>
+        </div>
+        <div class="list_wrapper">
+            <h3 class="list_title">Work</h3>
+            <ul class="list">
+                <li class="item">
+                    <span class="material-icons md-24">favorite</span>
+                    <span>Moodboard</span>
+                </li>
+                <li class="item">
+                    <span class="material-icons md-24">group</span>
+                    <span>User flow</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <section class="left">
+                <div>
+                    <span">Project:</span>
+                        <span class="tag">Develop new app</span>
+                </div>
+                <h1 class="title">Connection and Setup</h1>
+            </section>
+            <section class="right">
+                <span class="material-icons search_button">search</span>
+                <div class="add_buton">
+                    <span class="material-icons">add</span>
+                </div>
+            </section>
+        </div>
+        <div class="tasks_title">
+            <h2>Tasks</h2>
+            <h3 class="text-grey">Today</h3>
+        </div>
+
+        <div class="check_list">
+            <ul class="task_list">
+                <li class="task_item">
+                    <span class="material-icons">radio_button_unchecked</span>
+                    <div class="text_check border-bottom-gray">Setup GitHub repository</div>
+                </li>
+                <li class="task_item">
+                    <span class="material-icons">radio_button_unchecked</span>
+                    <div class="text_check border-bottom-gray">Setup sever at Heroku</div>
+                </li>
+                <li class="task_item">
+                    <span class="material-icons">radio_button_unchecked</span>
+                    <div class="text_check border-bottom-gray">Investigare Swiftn server options like Kitura and Vapor
+                    </div>
+                </li>
+                <li class="task_item">
+                    <span class="material-icons">radio_button_unchecked</span>
+                    <div class="text_check border-bottom-gray">Write basic server that authenticates user</div>
+                </li>
+                <li class="task_item">
+                    <span class="material-icons">radio_button_unchecked</span>
+                    <div class="text_check">
+                        Email questions to Momenta B.V on iOS app development
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="details">
+            <div class="header">
+                <h2 class="text-blue">Meeting with Contractors for iOS and App</h2>
+                <div class="today text-grey">
+                    <span class="strong">09 March 2024</span>
+                    <span class="material-icons">calendar_today</span>
+                </div>
+            </div>
+            <div class="box-meeting">
+                <ul class="box-meeting-list">
+                    <li class="box-meeting-item">Drew and Alex area the developers from Microline</li>
+                    <li class="box-meeting-item">Marcello is the designer from Wrinkly Pea Design</li>
+                    <li class="box-meeting-item">Together they from the team responsible for the critically-acclaimed
+                        Agenda app.They were also the first to talk of a Curiously Recursive Sample Data Paradox</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_panel">
+        <div class="calendar_right">
+            <div class="calendar">
+                <span>Mon</span>
+                <span class="bold">09</span>
+            </div>
+            <h2>March 2024</h2>
+            <div class="pointer">
+                <span class="material-icons md-24">more_vert</span>
+            </div>
+        </div>
+        <div>
+            <ul class="calendar_tasks">
+                <li class="item">
+                    <div class="hour">
+                        <span>all-day</span>
+                    </div>
+                    <div class="separator border_yellow"></div>
+                    <div class="detail">
+                        <span class="color-gray">Marketing</span>
+                        <span>3 categories of rocks</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="hour">
+                        <span>08:30</span>
+                        <span class="end color-gray">9:00</span>
+                    </div>
+                    <div class="separator border_purple">
+                    </div>
+                    <div class="detail">
+                        <span class="color-gray">Strategy planning</span>
+                        <span>Launch day bestbuy</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="hour">
+                        <span>12:00</span>
+                        <span class="end color-gray">13:00</span>
+                    </div>
+                    <div class="separator border_green"></div>
+                    <div class="detail">
+                        <span class="color-gray">Discovery</span>
+                        <span>Financial project</span>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+        <div class="notes">
+            <span class=" title-note color-gray">Recently Edited Notes</span>
+            <ul class="note-list">
+                <li class="item">
+                    <div  class="profile">
+                        <img src="images/profile1.png" alt="profile1">
+                    </div>
+                    <div>
+                        <span>Notes for initial planning meet... </span>
+                        <div class="color-gray subtitle">
+                            <span>Carolina Garcia</span>
+                            <span class="small-clock">10m</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div  class="profile">
+                        <img src="images/profile2.png" alt="profile2">
+                    </div>
+                    <div>
+                        <span>Meeting with contractors for... </span>
+                        <div class="color-gray subtitle">
+                            <span>Chamito Garcia</span>
+                            <span class="small-clock">1h</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>            
+            <button class="show-more-btn">Show more</button>
+        </div>       
+        <div class="upload-files">
+            <span class="title color-gray">Uploaded Files</span>
+            <div class="files">
+                <div class="file bg-purple">
+                    <span class="color-purple">PDF</span> 
+                </div>
+                <div class="file bg-yellow">
+                    <span class="color-yellow">FIG</span>
+                </div>
+                <div class="file bg-purple">
+                    <span class="color-purple">PDF</span>
+                </div>
+                <div class="file bg-pink">
+                    <span class="color-pink">Sketch</span>
+                </div>
+            </div>
+            <div class="files">
+                <div class="file bg-yellow">
+                    <span class="color-yellow">FIG</span>
+                </div>
+                <div class="file bg-purple">
+                    <span class="color-purple">PDF</span>
+                </div>
+                <div class="file bg-pink">
+                    <span class="color-pink">Sketch</span>
+                </div>
+                <div class="file bg-purple">
+                    <span class="color-purple">+19</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+
+</html>
