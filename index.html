@@ -8,13 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="main.js" ></script>
     <title>Tasks</title>
 </head>
 
 <body>
+    <script>
+        function myFunction() {
+            alert("O botão foi clicado!");
+        }
+    </script>
+
     <div class="menu">
         <div class="item"><span class="material-icons md-24">donut_large</span></div>
         <div class="item"><span class="material-icons md-24">smart_display</span></div>
@@ -104,15 +109,15 @@
             <h3 class="text-grey">Today</h3>
         </div>
 
-        <div class="check_list">
+        <form class="check_list" id="task-list">
             <ul class="task_list">
                 <li class="task_item">
-                    <span class="material-icons">radio_button_unchecked</span>
+                    <span class="material-icons" onclick="cambiarIcono(this)">radio_button_unchecked</span>
                     <div class="text_check border-bottom-gray">Setup GitHub repository</div>
                 </li>
                 <li class="task_item">
                     <span class="material-icons">radio_button_unchecked</span>
-                    <div class="text_check border-bottom-gray">Setup sever at Heroku</div>
+                    <div class="text_check border-bottom-gray" >Setup sever at Heroku</div>
                 </li>
                 <li class="task_item">
                     <span class="material-icons">radio_button_unchecked</span>
@@ -130,7 +135,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </form>
 
         <div class="details">
             <div class="header">
@@ -227,7 +232,7 @@
                     </div>
                 </li>
             </ul>            
-            <button class="show-more-btn">Show more</button>
+            <button class="show-more-btn" onclick="myFunction()">Show more</button>
         </div>       
         <div class="upload-files">
             <span class="title color-gray">Uploaded Files</span>
@@ -261,6 +266,15 @@
             </div>
         </div>    
     </div>
+    <script>
+        function cambiarIcono(span) {
+            if (span.textContent === 'radio_button_unchecked') {
+                span.textContent = 'task_alt';
+            } else {
+                span.textContent = 'radio_button_unchecked';
+            }
+        }
+    </script>
 </body>
 
 </html>
