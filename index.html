@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="main.js" ></script>
     <title>Tasks</title>
 </head>
 
@@ -87,13 +86,13 @@
             </ul>
         </div>
     </div>
-
+    
     <div class="main">
         <div class="header">
             <section class="left">
                 <div>
                     <span">Project:</span>
-                        <span class="tag">Develop new app</span>
+                    <span class="tag">Develop new app</span>
                 </div>
                 <h1 class="title">Connection and Setup</h1>
             </section>
@@ -108,7 +107,7 @@
             <h2>Tasks</h2>
             <h3 class="text-grey">Today</h3>
         </div>
-
+        
         <form class="check_list" id="task-list">
             <ul class="task_list">
                 <li class="task_item">
@@ -116,27 +115,27 @@
                     <div class="text_check border-bottom-gray">Setup GitHub repository</div>
                 </li>
                 <li class="task_item">
-                    <span class="material-icons">radio_button_unchecked</span>
+                    <span class="material-icons" onclick="cambiarIcono(this)">radio_button_unchecked</span>
                     <div class="text_check border-bottom-gray" >Setup sever at Heroku</div>
                 </li>
                 <li class="task_item">
-                    <span class="material-icons">radio_button_unchecked</span>
+                    <span class="material-icons" onclick="cambiarIcono(this)">radio_button_unchecked</span>
                     <div class="text_check border-bottom-gray">Investigare Swiftn server options like Kitura and Vapor
                     </div>
                 </li>
                 <li class="task_item">
-                    <span class="material-icons">radio_button_unchecked</span>
+                    <span class="material-icons"onclick="cambiarIcono(this)">radio_button_unchecked</span>
                     <div class="text_check border-bottom-gray">Write basic server that authenticates user</div>
                 </li>
                 <li class="task_item">
-                    <span class="material-icons">radio_button_unchecked</span>
+                    <span class="material-icons" onclick="cambiarIcono(this)">radio_button_unchecked</span>
                     <div class="text_check">
                         Email questions to Momenta B.V on iOS app development
                     </div>
                 </li>
             </ul>
         </form>
-
+        
         <div class="details">
             <div class="header">
                 <h2 class="text-blue">Meeting with Contractors for iOS and App</h2>
@@ -151,38 +150,38 @@
                     <li class="box-meeting-item">Marcello is the designer from Wrinkly Pea Design</li>
                     <li class="box-meeting-item">Together they from the team responsible for the critically-acclaimed
                         Agenda app.They were also the first to talk of a Curiously Recursive Sample Data Paradox</li>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="right_panel">
-        <div class="calendar_right">
-            <div class="calendar">
-                <span>Mon</span>
-                <span class="bold">09</span>
+        
+        <div class="right_panel">
+            <div class="calendar_right">
+                <div class="calendar">
+                    <span>Mon</span>
+                    <span class="bold">09</span>
+                </div>
+                <h2>March 2024</h2>
+                <div class="pointer">
+                    <span class="material-icons md-24">more_vert</span>
+                </div>
             </div>
-            <h2>March 2024</h2>
-            <div class="pointer">
-                <span class="material-icons md-24">more_vert</span>
-            </div>
-        </div>
-        <div>
-            <ul class="calendar_tasks">
-                <li class="item">
-                    <div class="hour">
-                        <span>all-day</span>
-                    </div>
-                    <div class="separator border_yellow"></div>
-                    <div class="detail">
-                        <span class="color-gray">Marketing</span>
-                        <span>3 categories of rocks</span>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="hour">
-                        <span>08:30</span>
-                        <span class="end color-gray">9:00</span>
+            <div>
+                <ul class="calendar_tasks">
+                    <li class="item">
+                        <div class="hour">
+                            <span>all-day</span>
+                        </div>
+                        <div class="separator border_yellow"></div>
+                        <div class="detail">
+                            <span class="color-gray">Marketing</span>
+                            <span>3 categories of rocks</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="hour">
+                            <span>08:30</span>
+                            <span class="end color-gray">9:00</span>
                     </div>
                     <div class="separator border_purple">
                     </div>
@@ -266,7 +265,8 @@
             </div>
         </div>    
     </div>
-    <script>
+    <script src="main.js" ></script>
+    <!-- <script>
         function cambiarIcono(span) {
             if (span.textContent === 'radio_button_unchecked') {
                 span.textContent = 'task_alt';
@@ -274,7 +274,7 @@
                 span.textContent = 'radio_button_unchecked';
             }
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
